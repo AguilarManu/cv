@@ -588,7 +588,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="micarpeta/enviarEmail.php" method="POST">
+                    <form action="php/enviarEmail.php" method="POST">
                       <div class="p pb-3"><strong>Conozca más sobre mí</strong></div>
                       <div class="row mb-3">
                         <div class="col">
@@ -600,14 +600,14 @@
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Asunto" required="required"/>
+                            <input class="form-control" type="text" name="asunto" minlength="5" maxlength="25" placeholder="Asunto" required="required"/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                            <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
                           </div>
                         </div>
                       </div>
